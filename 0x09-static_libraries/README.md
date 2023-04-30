@@ -1,1 +1,1 @@
-static library README
+STATIC LIBRARIES README.md
