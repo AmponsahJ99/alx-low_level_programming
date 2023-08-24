@@ -1,17 +1,61 @@
-#include <stdlib.h>
+#include <stdio.h>
 
 /**
- *random – any random integer for the main function
- *@int: an integer picked for the operation
- *result: the parameter used to determine the result
- *return: return a value of 0
+ * add - Adds two integers
+ * @a: The first integer
+ * @b: The second integer
+ *
+ * Return: The sum of @a and @b
  */
-int random_operation(int *result)
+int add(int a, int b)
 {
-    int a = rand() % 222 - 111;
-    int b = rand() % 222 - 111;
+	return (a + b);
+}
 
-    *result = a + b;
+/**
+ * sub - Subtracts two integers
+ * @a: The first integer
+ * @b: The second integer
+ *
+ * Return: The difference between @a and @b
+ */
+int sub(int a, int b)
+{
+	return (a - b);
+}
 
-    return 0;
+/**
+ * mul - Multiplies two integers
+ * @a: The first integer
+ * @b: The second integer
+ *
+ * Return: The product of @a and @b
+ */
+int mul(int a, int b)
+{
+	return (a * b);
+}
+
+/**
+ * div - Divides two integers
+ * @a: The first integer
+ * @b: The second integer
+ *
+ * Return: The quotient of @a divided by @b
+ */
+int div(int a, int b)
+{
+	return (a / b);
+}
+
+/**
+ * mod - Computes the modulus of two integers
+ * @a: The first integer
+ * @b: The second integer
+ *
+ * Return: The remainder of @a divided by @b
+ */
+int mod(int a, int b)
+{
+	return (a % b);
 }
